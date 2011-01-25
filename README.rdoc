@@ -18,6 +18,12 @@ In your application_controller add the following:
   include Gatekeeper
   before_filter :gatekeeper_authenticate
   
+  
+TODO:
+
+* Add tests
+* Add generator for yml file
+
 
 == Contributing to gatekeeper
  
