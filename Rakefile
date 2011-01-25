@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'bundler'
+require 'yaml'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -15,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "gatekeeper"
   gem.homepage = "http://github.com/fourfour/gatekeeper"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Password protect your projects on Heroku}
+  gem.description = %Q{Password protect your projects on Heroku with http digest authentication}
   gem.email = "eric@fourfourmedia.com"
   gem.authors = ["fourfour"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
