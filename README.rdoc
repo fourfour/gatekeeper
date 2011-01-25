@@ -2,25 +2,22 @@
 
 Rails 3:
 
-gem 'gatekeeper'
+  gem 'gatekeeper'
 
 Create config/gatekeeper.yml
 
 Copy and fill in the details below.
 
-USERS:
-  name: 'admin'
-  password: '123456'
-  app_name: 'My_App'
+  USERS:
+    name: 'admin'
+    password: '123456'
+    app_name: 'My_App'
   
 In your application_controller add the following:
 
-include Gatekeeper
-
-before_filter :gatekeeper_authenticate
-
-
-
+  include Gatekeeper
+  before_filter :gatekeeper_authenticate
+  
 
 == Contributing to gatekeeper
  
