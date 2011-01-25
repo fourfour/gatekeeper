@@ -6,12 +6,11 @@ gem 'gatekeeper'
 
 Create config/gatekeeper.yml
 
-Fill in the details below. To generate a secret for your app, run `$ rake secret`
+Copy and fill in the details below.
 
 USERS:
   name: 'admin'
   password: '123456'
-  secret: 'e1741ea24c3c2464efcb4e5a38289e3db016ee0aa639f717de01946cb1029f22422cfdc1333f98baf959935b14387dd649f4d55e634970b0ec30ab2bfc401bb2'
   app_name: 'My_App'
   
 In your application_controller add the following:
