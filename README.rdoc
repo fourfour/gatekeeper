@@ -13,10 +13,7 @@ Copy and fill in the details below.
     password: '123456'
     app_name: 'My_App'
   
-In your application_controller add the following:
-
-  include Gatekeeper
-  before_filter :gatekeeper_authenticate
+That's it. The module will automatically be included and have a before_filter just by including the gem in the Gemfile.
   
   
 TODO:
